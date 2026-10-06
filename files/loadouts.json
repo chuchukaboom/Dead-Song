@@ -1,0 +1,13 @@
+{
+  "sheet": "loadouts",
+  "about": "One row per starting loadout. A run rolls one at random and equips it with no player choice. crestRef/toolRefs are game names written from memory and must be matched against Silksong's real data before any code is generated.",
+  "columns": ["id", "name", "crestRef", "toolRefs", "startItemId", "bonusMasks", "bonusSilk", "flavor", "status"],
+  "rows": [
+    {"id": "L01", "name": "Needle Dancer", "crestRef": "crest:Wanderer", "toolRefs": ["tool:Straight Pin", "tool:Tacks"], "startItemId": null, "bonusMasks": 0, "bonusSilk": 0, "flavor": "Balanced and quick; no tricks.", "status": "unverified"},
+    {"id": "L02", "name": "Reaper's Gamble", "crestRef": "crest:Reaper", "toolRefs": ["tool:Sting Shard"], "startItemId": "LI07", "bonusMasks": 0, "bonusSilk": 0, "flavor": "Hits hard, dies fast.", "status": "unverified"},
+    {"id": "L03", "name": "Quick Thread", "crestRef": "crest:Hunter", "toolRefs": ["tool:Longpin"], "startItemId": "LI03", "bonusMasks": 0, "bonusSilk": 0, "flavor": "Built for running past trouble.", "status": "unverified"},
+    {"id": "L04", "name": "Heavy Hand", "crestRef": "crest:Beast", "toolRefs": ["tool:Pimpillo"], "startItemId": "LI02", "bonusMasks": 0, "bonusSilk": 0, "flavor": "Close range, big numbers.", "status": "unverified"},
+    {"id": "L05", "name": "Spellweaver", "crestRef": "crest:Witch", "toolRefs": ["tool:Cogfly"], "startItemId": "LI01", "bonusMasks": 0, "bonusSilk": 1, "flavor": "Silk-hungry; fuels everything else.", "status": "unverified"},
+    {"id": "L06", "name": "Plain Pilgrim", "crestRef": "crest:Hunter", "toolRefs": ["tool:Straight Pin"], "startItemId": null, "bonusMasks": 1, "bonusSilk": 0, "flavor": "The humble start: one extra mask, nothing else.", "status": "unverified"}
+  ]
+}

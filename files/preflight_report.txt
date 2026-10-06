@@ -1,0 +1,78 @@
+PREFLIGHT REPORT
+========================================
+
+[structure] 0 finding(s)
+
+[unfilled] 13 finding(s)
+  - hooks:H01.gameTarget is empty
+  - hooks:H02.gameTarget is empty
+  - hooks:H03.gameTarget is empty
+  - hooks:H04.gameTarget is empty
+  - hooks:H05.gameTarget is empty
+  - hooks:H06.gameTarget is empty
+  - hooks:H07.gameTarget is empty
+  - hooks:H08.gameTarget is empty
+  - hooks:H09.gameTarget is empty
+  - hooks:H10.gameTarget is empty
+  - hooks:H11.gameTarget is empty
+  - hooks:H12.gameTarget is empty
+  - run_rules:R07.value is empty
+
+[references] 0 finding(s)
+
+[status] 32 finding(s)
+  - loadouts:L01 status is 'unverified'
+  - loadouts:L02 status is 'unverified'
+  - loadouts:L03 status is 'unverified'
+  - loadouts:L04 status is 'unverified'
+  - loadouts:L05 status is 'unverified'
+  - loadouts:L06 status is 'unverified'
+  - loot_items:LI01 status is 'unverified'
+  - loot_items:LI02 status is 'unverified'
+  - loot_items:LI03 status is 'unverified'
+  - loot_items:LI04 status is 'unverified'
+  - loot_items:LI05 status is 'unverified'
+  - loot_items:LI06 status is 'unverified'
+  - loot_items:LI07 status is 'unverified'
+  - loot_items:LI08 status is 'unverified'
+  - loot_items:LI09 status is 'unverified'
+  - loot_items:LI10 status is 'unverified'
+  - hooks:H01 status is 'unresolved'
+  - hooks:H02 status is 'unresolved'
+  - hooks:H03 status is 'unresolved'
+  - hooks:H04 status is 'unresolved'
+  - hooks:H05 status is 'unresolved'
+  - hooks:H06 status is 'unresolved'
+  - hooks:H07 status is 'unresolved'
+  - hooks:H08 status is 'unresolved'
+  - hooks:H09 status is 'unresolved'
+  - hooks:H10 status is 'unresolved'
+  - hooks:H11 status is 'unresolved'
+  - hooks:H12 status is 'unresolved'
+  - run_rules:R03 status is 'unverified'
+  - run_rules:R04 status is 'unverified'
+  - run_rules:R05 status is 'unverified'
+  - run_rules:R07 status is 'unresolved'
+
+[game links] 18 still to resolve against Silksong's code/data
+  - hooks:H01 (onPlayerDeath) has no gameTarget yet
+  - hooks:H02 (onRoomEnter) has no gameTarget yet
+  - hooks:H03 (startNewRun) has no gameTarget yet
+  - hooks:H04 (damageDealt) has no gameTarget yet
+  - hooks:H05 (damageTaken) has no gameTarget yet
+  - hooks:H06 (moveSpeed) has no gameTarget yet
+  - hooks:H07 (silkGain) has no gameTarget yet
+  - hooks:H08 (currencyGain) has no gameTarget yet
+  - hooks:H09 (onEnemyKilled) has no gameTarget yet
+  - hooks:H10 (spawnLoot) has no gameTarget yet
+  - hooks:H11 (runSaveSlot) has no gameTarget yet
+  - hooks:H12 (showRunMessage) has no gameTarget yet
+  - loadouts:L01 crest/tool names not yet matched to game data
+  - loadouts:L02 crest/tool names not yet matched to game data
+  - loadouts:L03 crest/tool names not yet matched to game data
+  - loadouts:L04 crest/tool names not yet matched to game data
+  - loadouts:L05 crest/tool names not yet matched to game data
+  - loadouts:L06 crest/tool names not yet matched to game data
+
+========================================
+NOT READY: 13 sheet problem(s), 18 game link(s) unresolved.

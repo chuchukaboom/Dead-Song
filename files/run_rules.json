@@ -1,0 +1,14 @@
+{
+  "sheet": "run_rules",
+  "about": "One row per rule that defines a run. Values are first guesses for tuning. A rule whose value is null needs a decision or a lookup in the game's data.",
+  "columns": ["id", "rule", "value", "unit", "hooks", "notes", "status"],
+  "rows": [
+    {"id": "R01", "rule": "loadoutPickMode", "value": "random", "unit": "mode", "hooks": ["H03"], "notes": "No player choice; one loadout rolled at run start.", "status": "decided"},
+    {"id": "R02", "rule": "onDeath", "value": "endRunAndRestart", "unit": "action", "hooks": ["H01", "H03"], "notes": "Death ends the run and starts a fresh one with a new loadout.", "status": "decided"},
+    {"id": "R03", "rule": "baseLootDropChance", "value": 0.08, "unit": "probability per enemy kill", "hooks": ["H10"], "notes": "Tuning guess; Lucky Coin multiplies it.", "status": "unverified"},
+    {"id": "R04", "rule": "maxLootHeld", "value": 6, "unit": "items", "hooks": ["H10"], "notes": "Tuning guess.", "status": "unverified"},
+    {"id": "R05", "rule": "allowDuplicateLoot", "value": false, "unit": "boolean", "hooks": ["H10"], "notes": "An item you already hold is never offered again in that run.", "status": "unverified"},
+    {"id": "R06", "rule": "runUsesIsolatedSave", "value": true, "unit": "boolean", "hooks": ["H11"], "notes": "Protects the player's real progress.", "status": "decided"},
+    {"id": "R07", "rule": "runStartLocation", "value": null, "unit": "scene name", "hooks": ["H03"], "notes": "Which room each run starts in; to be chosen once the game's scenes are listed.", "status": "unresolved"}
+  ]
+}

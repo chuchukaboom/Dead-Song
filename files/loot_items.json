@@ -1,0 +1,17 @@
+{
+  "sheet": "loot_items",
+  "about": "One row per loot item. Names and art are original. 'hooks' lists the hook ids (hooks.json) the item needs; 'value' meaning depends on 'effect'. Numbers are first guesses for tuning, not verified.",
+  "columns": ["id", "name", "rarity", "effect", "value", "valueUnit", "trigger", "hooks", "description", "status"],
+  "rows": [
+    {"id": "LI01", "name": "Frayed Spool", "rarity": "common", "effect": "silkGainMultiplier", "value": 1.3, "valueUnit": "multiplier", "trigger": "passive", "hooks": ["H07"], "description": "Silk comes back 30% faster.", "status": "unverified"},
+    {"id": "LI02", "name": "Needle Whetstone", "rarity": "common", "effect": "damageDealtMultiplier", "value": 1.2, "valueUnit": "multiplier", "trigger": "passive", "hooks": ["H04"], "description": "Your needle hits 20% harder.", "status": "unverified"},
+    {"id": "LI03", "name": "Sprinter's Anklet", "rarity": "common", "effect": "moveSpeedMultiplier", "value": 1.12, "valueUnit": "multiplier", "trigger": "passive", "hooks": ["H06"], "description": "Run 12% faster.", "status": "unverified"},
+    {"id": "LI04", "name": "Brittle Shell Plate", "rarity": "uncommon", "effect": "negateFirstHitPerRoom", "value": 1, "valueUnit": "hits per room", "trigger": "on room enter", "hooks": ["H05", "H02"], "description": "The first hit you take in each room does nothing.", "status": "unverified"},
+    {"id": "LI05", "name": "Rosary Magnet", "rarity": "common", "effect": "currencyGainMultiplier", "value": 1.25, "valueUnit": "multiplier", "trigger": "passive", "hooks": ["H08"], "description": "Rosaries are worth 25% more.", "status": "unverified"},
+    {"id": "LI06", "name": "Bloodied Thread", "rarity": "uncommon", "effect": "healOnKills", "value": 8, "valueUnit": "kills per 1 mask", "trigger": "on enemy killed", "hooks": ["H09"], "description": "Every 8th kill mends one mask.", "status": "unverified"},
+    {"id": "LI07", "name": "Glass Stinger", "rarity": "rare", "effect": "damageDealtMultiplier+extraDamageTaken", "value": 1.4, "valueUnit": "multiplier (+1 damage taken)", "trigger": "passive", "hooks": ["H04", "H05"], "description": "Hit 40% harder, but every hit on you costs one extra mask.", "status": "unverified"},
+    {"id": "LI08", "name": "Echoing Strike", "rarity": "rare", "effect": "repeatHit", "value": 5, "valueUnit": "every Nth hit repeats at 50% damage", "trigger": "on hit", "hooks": ["H04", "H09"], "description": "Every 5th hit echoes for half damage.", "status": "unverified"},
+    {"id": "LI09", "name": "Second Wind", "rarity": "rare", "effect": "surviveLethalOnce", "value": 1, "valueUnit": "uses per run", "trigger": "on lethal damage", "hooks": ["H01", "H05"], "description": "Once per run, a killing blow leaves you at 1 mask.", "status": "unverified"},
+    {"id": "LI10", "name": "Lucky Coin", "rarity": "uncommon", "effect": "lootDropChanceMultiplier", "value": 1.5, "valueUnit": "multiplier", "trigger": "passive", "hooks": ["H10"], "description": "Enemies drop loot 50% more often.", "status": "unverified"}
+  ]
+}

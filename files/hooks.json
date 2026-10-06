@@ -1,0 +1,19 @@
+{
+  "sheet": "hooks",
+  "about": "One row per place the plugin must read or change Silksong. gameTarget is the real class/method to patch and stays null until found by reading the game's code; every null is a preflight finding. 'core' in usedBy means the run loop itself needs it.",
+  "columns": ["id", "name", "system", "purpose", "usedBy", "gameTarget", "status"],
+  "rows": [
+    {"id": "H01", "name": "onPlayerDeath", "system": "player health", "purpose": "Intercept death: end the run, or let Second Wind prevent it.", "usedBy": ["core", "LI09"], "gameTarget": null, "status": "unresolved"},
+    {"id": "H02", "name": "onRoomEnter", "system": "scene loading", "purpose": "Know when Hornet enters a room (resets per-room effects).", "usedBy": ["LI04"], "gameTarget": null, "status": "unresolved"},
+    {"id": "H03", "name": "startNewRun", "system": "save and respawn", "purpose": "Reset world and player state, roll a loadout, equip it.", "usedBy": ["core"], "gameTarget": null, "status": "unresolved"},
+    {"id": "H04", "name": "damageDealt", "system": "combat", "purpose": "Modify damage Hornet deals; count hits.", "usedBy": ["LI02", "LI07", "LI08"], "gameTarget": null, "status": "unresolved"},
+    {"id": "H05", "name": "damageTaken", "system": "combat", "purpose": "Modify or negate damage Hornet takes.", "usedBy": ["LI04", "LI07", "LI09"], "gameTarget": null, "status": "unresolved"},
+    {"id": "H06", "name": "moveSpeed", "system": "player movement", "purpose": "Scale Hornet's run speed.", "usedBy": ["LI03"], "gameTarget": null, "status": "unresolved"},
+    {"id": "H07", "name": "silkGain", "system": "silk resource", "purpose": "Scale silk gained from hits.", "usedBy": ["LI01"], "gameTarget": null, "status": "unresolved"},
+    {"id": "H08", "name": "currencyGain", "system": "rosary currency", "purpose": "Scale rosaries picked up.", "usedBy": ["LI05"], "gameTarget": null, "status": "unresolved"},
+    {"id": "H09", "name": "onEnemyKilled", "system": "enemies", "purpose": "Count kills; trigger kill-based effects.", "usedBy": ["LI06", "LI08"], "gameTarget": null, "status": "unresolved"},
+    {"id": "H10", "name": "spawnLoot", "system": "enemies and pickups", "purpose": "Roll and spawn a loot pickup when an enemy dies.", "usedBy": ["core", "LI10"], "gameTarget": null, "status": "unresolved"},
+    {"id": "H11", "name": "runSaveSlot", "system": "save files", "purpose": "Keep run state in its own save slot so the player's real save is never overwritten.", "usedBy": ["core"], "gameTarget": null, "status": "unresolved"},
+    {"id": "H12", "name": "showRunMessage", "system": "HUD", "purpose": "Show 'Run started: <loadout>' and 'Found: <item>' text on screen.", "usedBy": ["core"], "gameTarget": null, "status": "unresolved"}
+  ]
+}
